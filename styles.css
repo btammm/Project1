@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    z-index: 50; 
+}
+
+.container {
+    position: relative;
+    z-index: 100;
+}
+
+.image-wrapper {
+    position: relative;
+    background-color: #d3d3d3; 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+#meme {
+    width: 800px;
+    height: auto;
+    cursor: pointer;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 780px; 
+    height: 780px; 
+    z-index: 120;
+}
+
+.close {
+    position: absolute;
+    top: 5px; 
+    right: 10px; 
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
